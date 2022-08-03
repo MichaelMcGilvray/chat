@@ -1,7 +1,7 @@
 <nav>
-  <ul>
-    <li><a routerLink="/">Home</a></li>
-    <li><a routerLink="/chat-box">Chat Box</a></li>
+  <ul ngbNav #nav="ngbNav" class="nav-pill">
+    <li ngbNavItem><a routerLink="/" ngbNavLink>Home</a></li>
+    <li ngbNavItem><a routerLink="/chat-box" ngbNavLink>Chat Box</a></li>
   </ul>
 </nav>
 

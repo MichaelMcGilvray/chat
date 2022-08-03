@@ -1,1 +1,2 @@
-<p>chat-box works!</p>
+<p *ngFor="let msg of messages" class="card">Test user: {{msg}}</p>
+<input [(ngModel)]="message" (keyup.enter)="sendMessage()">
