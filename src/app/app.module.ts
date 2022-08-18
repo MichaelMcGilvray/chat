@@ -8,13 +8,15 @@ import { ChatBoxComponent } from './components/chat-box/chat-box.component';
 import { PageNotFoundComponent } from './components/page-not-found/page-not-found.component';
 import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { TestDirectiveDirective } from './directives/test-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ChatBoxComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    TestDirectiveDirective
   ],
   imports: [
     BrowserModule,
@@ -22,6 +24,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     FormsModule,
   ],
+  exports: [TestDirectiveDirective],
   providers: [],
   bootstrap: [AppComponent]
 })

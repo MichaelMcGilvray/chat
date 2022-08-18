@@ -7,9 +7,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
+  data: any;
+  formattedData: any;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.data = 0;
+
+    // I don't need this
+    this.formattedData = "Soon to be formatted";
+  }
+
+  public updateData() {
+    this.data += 1;
   }
 
 }

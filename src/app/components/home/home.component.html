@@ -1,1 +1,9 @@
 <p>home works!</p>
+
+<!-- I don't even need the [(ngModel)] because I don't need @Ouutput in the directive -->
+<!-- <input appTestDirective [unformatted]="data" [(ngModel)]="formattedData" type="text"> -->
+<input appTestDirective [unformatted]="data" type="text">
+
+<button (click)="updateData()">Click me!</button>
+
+<p>Data = {{data}} and formattedData = {{formattedData}}</p>
