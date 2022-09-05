@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { FriendsService } from 'src/app/services/friends/friends.service';
-import { UserConfigService } from 'src/app/services/user-config.service';
+import { UserConfigService } from 'src/app/services/user-config/user-config.service';
 
 @Component({
   selector: 'app-chat-box',
