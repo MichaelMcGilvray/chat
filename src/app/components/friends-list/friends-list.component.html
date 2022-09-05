@@ -1,0 +1,7 @@
+<div class="container rounded p-3 w-50 mb-3">
+    <div *ngFor="let friend of friends" (click)="openChat(friend.id)" class="friend">
+        <img class="d-inline"
+            src="https://thumbs.dreamstime.com/b/default-profile-picture-avatar-photo-placeholder-vector-illustration-default-profile-picture-avatar-photo-placeholder-vector-189495158.jpg">
+        <p class="d-inline">{{friend.name}}</p>
+    </div>
+</div>

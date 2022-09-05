@@ -1,2 +1,22 @@
-<p *ngFor="let msg of messages" class="card">Test user: {{msg}}</p>
-<input [(ngModel)]="message" (keyup.enter)="sendMessage()">
+<div class="container rounded p-3 w-50 mb-3">
+    <h4 class="text-center">Hello, {{user.name}}</h4>
+</div>
+
+<div class="container rounded p-3 w-50">
+    <div *ngFor="let msg of messages">
+        <div 
+            class="message mx-3 d-block">
+            <p
+            [ngClass]="{myMessage: msg.user === this.user, notMyMessage: msg.user !== this.user}">{{msg.message}}</p>
+        </div>
+    </div>
+    <div class="input-group px-3">
+        <input type="text" class="form-control" [(ngModel)]="message" (keyup.enter)="sendMessage()">
+        <div class="input-group-append">
+            <button type="button" class="btn btn-outline-primary" (click)="sendMessage()">Send</button>
+        </div>
+    </div>
+</div>
+
+<button (click)="toggleUser()">Toggle User</button>
+
